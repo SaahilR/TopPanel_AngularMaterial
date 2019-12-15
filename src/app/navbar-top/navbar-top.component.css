@@ -1,0 +1,16 @@
+.menu-item {
+    flex: 1 1 auto;
+}
+
+.menu-icon {
+    padding-right: 10px;
+}
+
+.profile {
+    background-image: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png');
+    background-size: cover;
+}
+
+.profile-item {
+    max-width: 400px;
+}

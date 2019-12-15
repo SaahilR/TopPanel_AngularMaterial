@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span class="menu-item">
+            <button mat-button>
+                <mat-icon>home</mat-icon>
+                Logo
+            </button>
+        </span>
+        <span class="menu-item">
+            <button mat-button>
+                <mat-icon class="menu-icon">videocam</mat-icon>
+                965 Devices Online
+            </button>
+        </span>
+        <span class="menu-item">
+            <button mat-button>
+                <mat-icon class="menu-icon">warning</mat-icon>
+                117 Active Events
+            </button>
+        </span>
+        <span class="menu-item">
+            <button mat-button>
+                <mat-icon class="menu-icon">remove_red_eye</mat-icon>
+                87 Audits
+            </button>
+        </span>
+        <mat-menu #profileMenu="matMenu" xPosition="after">
+            <button mat-menu-item>Settings</button>
+            <button mat-menu-item>Logout</button>
+        </mat-menu>
+        <span class="profile-item">
+            <div mat-button [matMenuTriggerFor]="profileMenu">
+                <div mat-card class="profile"></div>
+                Name
+            </div>
+        </span>
+    </mat-toolbar-row>
+</mat-toolbar>
